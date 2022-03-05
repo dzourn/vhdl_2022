@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../vhdl_transfer/latch.vhd" \
+"../../../../../vhdl_transfer/top_module.vhd" \
+"../../../../minimum_ones.srcs/sim_1/new/top_module_tb.vhd" \
+
+# Do not sort compile order
+nosort

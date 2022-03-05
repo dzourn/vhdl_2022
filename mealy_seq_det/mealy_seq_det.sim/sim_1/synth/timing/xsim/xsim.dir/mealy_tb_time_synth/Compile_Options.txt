@@ -1,0 +1,1 @@
+-wto "ae8e5c253e9b4db0be37f8863a38efbc" --incr --debug "typical" --relax --mt "8" --maxdelay -L "xil_defaultlib" -L "simprims_ver" -L "secureip" --snapshot "mealy_tb_time_synth" -transport_int_delays -pulse_r "0" -pulse_int_r "0" -pulse_e "0" -pulse_int_e "0" "xil_defaultlib.mealy_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dimitris/di_vhdl/project_1/project_1.sim/sim_1/synth/timing/xsim/DSD_Lab2_tb_w_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DSD_Lab2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/di_vhdl/project_1/project_1.srcs/sim_1/new/DSD_Lab2_tb_w.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DSD_Lab2_tb_w'

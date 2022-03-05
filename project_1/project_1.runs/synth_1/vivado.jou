@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  2 13:52:56 2021
+# Process ID: 56165
+# Current directory: /home/dimitris/di_vhdl/project_1/project_1.runs/synth_1
+# Command line: vivado -log DSD_Lab2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSD_Lab2.tcl
+# Log file: /home/dimitris/di_vhdl/project_1/project_1.runs/synth_1/DSD_Lab2.vds
+# Journal file: /home/dimitris/di_vhdl/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source DSD_Lab2.tcl -notrace

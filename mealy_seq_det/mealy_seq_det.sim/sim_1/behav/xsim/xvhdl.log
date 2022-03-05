@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/mealy_seq_det/mealy_seq_det.srcs/sim_1/new/mealy_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mealy_tb'

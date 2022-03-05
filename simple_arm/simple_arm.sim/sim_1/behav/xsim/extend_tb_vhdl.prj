@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../simple_arm.srcs/sources_1/new/extend.vhd" \
+"../../../../simple_arm.srcs/sim_1/new/extend_tb.vhd" \
+
+# Do not sort compile order
+nosort

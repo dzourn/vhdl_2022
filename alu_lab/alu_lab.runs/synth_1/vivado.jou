@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 24 16:46:55 2021
+# Process ID: 13972
+# Current directory: /home/dimitris/di_vhdl/alu_lab/alu_lab.runs/synth_1
+# Command line: vivado -log alu_lab.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_lab.tcl
+# Log file: /home/dimitris/di_vhdl/alu_lab/alu_lab.runs/synth_1/alu_lab.vds
+# Journal file: /home/dimitris/di_vhdl/alu_lab/alu_lab.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source alu_lab.tcl -notrace

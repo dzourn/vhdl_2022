@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dimitris/di_vhdl/minimum_ones/minimum_ones.sim/sim_1/synth/timing/xsim/top_module_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-311] analyzing module latch_0
+INFO: [VRFC 10-311] analyzing module latch_1
+INFO: [VRFC 10-311] analyzing module latch_2
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/di_vhdl/minimum_ones/minimum_ones.srcs/sim_1/new/top_module_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_module_tb'

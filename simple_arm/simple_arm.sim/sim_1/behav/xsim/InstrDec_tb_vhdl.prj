@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../simple_arm.srcs/sources_1/new/reg_file.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/alu.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/extend.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/mux.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/adder.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/latch_we.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/latch.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/InstrDec.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/WELogic.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/PCLogic.vhd" \
+"../../../../simple_arm.srcs/sim_1/new/reg_file_tb.vhd" \
+"../../../../simple_arm.srcs/sim_1/new/alu_tb.vhd" \
+"../../../../simple_arm.srcs/sim_1/new/extend_tb.vhd" \
+"../../../../simple_arm.srcs/sim_1/new/InstrDec_tb.vhd" \
+
+# Do not sort compile order
+nosort

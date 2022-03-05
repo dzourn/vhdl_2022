@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_module_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_module_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="255429fs"></ZoomEndTime>
+      <Cursor1Time time="10555fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="168"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject type="logic" fp_name="/top_module_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_module_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/data0">
+      <obj_property name="ElementShortName">data0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/data1">
+      <obj_property name="ElementShortName">data1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/data2">
+      <obj_property name="ElementShortName">data2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/data3">
+      <obj_property name="ElementShortName">data3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data3[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/min">
+      <obj_property name="ElementShortName">min[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/ones">
+      <obj_property name="ElementShortName">ones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/tmp0">
+      <obj_property name="ElementShortName">tmp0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider179" type="divider">
+      <obj_property name="label">dbus0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus00">
+      <obj_property name="ElementShortName">dbus00[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus00[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus10">
+      <obj_property name="ElementShortName">dbus10[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus10[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus20">
+      <obj_property name="ElementShortName">dbus20[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus20[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus30">
+      <obj_property name="ElementShortName">dbus30[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus30[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider180" type="divider">
+      <obj_property name="label">dbus1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus01">
+      <obj_property name="ElementShortName">dbus01[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus01[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus11">
+      <obj_property name="ElementShortName">dbus11[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus11[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus21">
+      <obj_property name="ElementShortName">dbus21[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus21[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus31">
+      <obj_property name="ElementShortName">dbus31[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus31[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider181" type="divider">
+      <obj_property name="label">dbus2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus02">
+      <obj_property name="ElementShortName">dbus02[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus02[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus12">
+      <obj_property name="ElementShortName">dbus12[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus12[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus22">
+      <obj_property name="ElementShortName">dbus22[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus22[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus32">
+      <obj_property name="ElementShortName">dbus32[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus32[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider182" type="divider">
+      <obj_property name="label">dbus3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus03">
+      <obj_property name="ElementShortName">dbus03[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus03[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus13">
+      <obj_property name="ElementShortName">dbus13[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus13[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus23">
+      <obj_property name="ElementShortName">dbus23[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus23[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_module_tb/uut/dbus33">
+      <obj_property name="ElementShortName">dbus33[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbus33[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

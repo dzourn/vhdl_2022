@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dimitris/di_vhdl/mealy_seq_det/mealy_seq_det.sim/sim_1/synth/timing/xsim/mealy_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy
+INFO: [VRFC 10-311] analyzing module glbl

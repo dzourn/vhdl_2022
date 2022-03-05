@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="15855fs"></ZoomStartTime>
+      <ZoomEndTime time="115516fs"></ZoomEndTime>
+      <Cursor1Time time="176670fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="109"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="array" fp_name="/alu_tb/srcA">
+      <obj_property name="ElementShortName">srcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/srcB">
+      <obj_property name="ElementShortName">srcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcB[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/alu_control">
+      <obj_property name="ElementShortName">alu_control[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_control[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/alu_result">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/uut/alu_flags">
+      <obj_property name="ElementShortName">alu_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_flags[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/uut/cout">
+      <obj_property name="ElementShortName">cout</obj_property>
+      <obj_property name="ObjectShortName">cout</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/uut/dummy1">
+      <obj_property name="ElementShortName">dummy1</obj_property>
+      <obj_property name="ObjectShortName">dummy1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/uut/dummy2">
+      <obj_property name="ElementShortName">dummy2</obj_property>
+      <obj_property name="ObjectShortName">dummy2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/uut/dummy3">
+      <obj_property name="ElementShortName">dummy3</obj_property>
+      <obj_property name="ObjectShortName">dummy3</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/uut/sum">
+      <obj_property name="ElementShortName">sum[32:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[32:0]</obj_property>
+   </wvobject>
+</wave_config>

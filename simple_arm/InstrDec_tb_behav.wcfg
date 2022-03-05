@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="InstrDec_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="InstrDec_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000fs"></ZoomEndTime>
+      <Cursor1Time time="1060fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="array" fp_name="/InstrDec_tb/op">
+      <obj_property name="ElementShortName">op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/InstrDec_tb/funct">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/InstrDec_tb/RegSrc">
+      <obj_property name="ElementShortName">RegSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RegSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/InstrDec_tb/ALUsrc">
+      <obj_property name="ElementShortName">ALUsrc</obj_property>
+      <obj_property name="ObjectShortName">ALUsrc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/InstrDec_tb/MemtoReg">
+      <obj_property name="ElementShortName">MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/InstrDec_tb/ALUControl">
+      <obj_property name="ElementShortName">ALUControl[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/InstrDec_tb/Immsrc">
+      <obj_property name="ElementShortName">Immsrc</obj_property>
+      <obj_property name="ObjectShortName">Immsrc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/InstrDec_tb/NoWrite_in">
+      <obj_property name="ElementShortName">NoWrite_in</obj_property>
+      <obj_property name="ObjectShortName">NoWrite_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/InstrDec_tb/uut/op_funct_tmp">
+      <obj_property name="ElementShortName">op_funct_tmp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op_funct_tmp[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/InstrDec_tb/uut/control">
+      <obj_property name="ElementShortName">control[7:0]</obj_property>
+      <obj_property name="ObjectShortName">control[7:0]</obj_property>
+   </wvobject>
+</wave_config>

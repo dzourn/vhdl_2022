@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/InstrDec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstrDec'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/WELogic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'WELogic'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/PCLogic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PCLogic'

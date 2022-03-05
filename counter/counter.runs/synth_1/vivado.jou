@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 24 20:32:31 2022
+# Process ID: 8652
+# Current directory: /home/dimitris/di_vhdl/counter/counter.runs/synth_1
+# Command line: vivado -log counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter.tcl
+# Log file: /home/dimitris/di_vhdl/counter/counter.runs/synth_1/counter.vds
+# Journal file: /home/dimitris/di_vhdl/counter/counter.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source counter.tcl -notrace
