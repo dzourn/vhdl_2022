@@ -34,35 +34,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PCLogic is
     Port ( RD : in STD_LOGIC_VECTOR (3 downto 0);
            op : in STD_LOGIC_VECTOR (1 downto 0);
-           RegWrite_in : out STD_LOGIC;
+           RegWrite_in : in STD_LOGIC;
            PCSrc_in : out STD_LOGIC);
 end PCLogic;
 
 architecture Behavioral of PCLogic is
-    signal op_RD_tmp : std_logic_vector(5 downto 0);
-    signal control : std_logic_vector(1 downto 0);
+    signal op_RD_tmp : std_logic_vector(6 downto 0);
+    signal tmp : std_logic;
 begin
-    op_RD_tmp(5 downto 4) <= op;
-    op_Rd_tmp(3 downto 0) <= RD;
+    op_RD_tmp(6 downto 5) <= op;
+    op_Rd_tmp(4 downto 1) <= RD;
+    op_Rd_tmp(0) <= RegWrite_in;
     
     process(op_RD_tmp) is
     begin   
         case op_RD_tmp is
-            when "000000" => control <= "10";
-            when "001110" => control <= "11";
-            when "00XXXX" => control <= "00";
-            when "010000" => control <= "10";
-            when "011110" => control <= "10";
-            when "011111" => control <= "11";
-            when "01XXXX" => control <= "00";
-            when "10XXXX" => control <= "01";
-            when others => control <= "XX";
-        end case;       
+            when "0000001" => PCSrc_in <= '0';
+            when "0011101" => PCSrc_in <= '0';
+            when "0011111" => PCSrc_in <= '1';
+            when "00XXXX0" => PCSrc_in <= '0';
+            when "0100001" => PCSrc_in <= '0';
+            when "0111101" => PCSrc_in <= '0';
+            when "0111111" => PCSrc_in <= '1';
+            when "01XXXX0" => PCSrc_in <= '0';
+            when "10XXXX0" => PCSrc_in <= '1';
+            when others => PCSrc_in <= 'X';
+        end case;      
     end process;
     
-    process(control) is
-    begin
-        RegWrite_in <= control(1);
-        PCSrc_in <= control(0);
-    end process;
 end Behavioral;

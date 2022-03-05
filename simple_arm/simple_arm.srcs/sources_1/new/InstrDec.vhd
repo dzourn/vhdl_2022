@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity InstrDec is
     Port ( op : in STD_LOGIC_VECTOR (1 downto 0);
            funct : in STD_LOGIC_VECTOR (5 downto 0);
+           
            RegSrc : out STD_LOGIC_VECTOR (1 downto 0);
            ALUsrc : out STD_LOGIC;
            Immsrc : out STD_LOGIC;
@@ -71,6 +72,7 @@ begin
             when "01011000" => control <= "101000X0"; --STR IMM +
             when "01010000" => control <= "101001X0"; --STR IMM -
             when "1010XXXX" => control <= "X1110000"; --B
+           
             --BL
             --MOV,NOP
             --MVN
