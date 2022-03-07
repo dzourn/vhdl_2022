@@ -35,24 +35,38 @@ entity alu is
     generic(width : positive := 32);
     Port ( srcA : in STD_LOGIC_VECTOR (width-1 downto 0);
            srcB : in STD_LOGIC_VECTOR (width-1 downto 0);
-           ALUControl : in STD_LOGIC_VECTOR (1 downto 0);
+           ALUControl : in STD_LOGIC_VECTOR (3 downto 0);
+           shamt : in STD_LOGIC_VECTOR(4 downto 0);
            ALUResult : out STD_LOGIC_VECTOR (width-1 downto 0);
            Flags : out STD_LOGIC_VECTOR (3 downto 0));
 end alu;
 
 architecture Behavioral of alu is
-    signal tmp: std_logic_vector(31 downto 0) := (others => '0'); 
-    signal inv_b: std_logic_vector(31 downto 0);
-    signal a: std_logic_vector(31 downto 0);
-    signal flags_tmp: std_logic_vector(3 downto 0) := (others => '0');
-    signal sum: unsigned(32 downto 0);
-    signal cout: std_logic;
-    signal result_tmp : std_logic_vector(31 downto 0); 
-    
-    signal dummy1 : std_logic;
-    signal dummy2 : std_logic;
-    signal dummy3 : std_logic;
+    signal tmp_result : std_logic_vector(32 downto 0) := (others => '0');
+    signal V,C,N,Z : std_logic := '0';
 begin
+    
+    process(ALUControl, srcA, srcB)
+    begin
+        case ALUControl is
+        when "0000" => 
+            tmp_result <= std_logic_vector(signed('0'&srcA) + signed('0'&srcB)); --add
+        
+        when "0001" =>
+            tmp_result <= std_logic_vector(signed('0'&srcA) - signed('0'&srcB)); --sub
+    
+        when "0010" =>
+            tmp_result <= srcA and srcB;
+        
+        when "0011" => 
+            tmp_result <= srcA or srcB;
+            
+            
+        when others =>
+            tmp_result <= (others => 'X');
+        
+        end case;
+    end process;
 --    tmp(0) <= alu_control(0);
 --    inv_b <= not srcB when alu_control(0) = '1' else srcB;
 --    sum <= unsigned('0'& srcA) + unsigned('0'& inv_b) + unsigned(tmp);

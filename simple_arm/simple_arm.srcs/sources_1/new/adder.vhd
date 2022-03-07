@@ -40,9 +40,9 @@ entity adder is
 end adder;
 
 architecture Behavioral of adder is
-    signal temp: unsigned(width-1 downto 0);
+    
 begin
-    temp <= unsigned(a) + unsigned(b);
-    y <= std_logic_vector(temp);
+    
+    y <= std_logic_vector(unsigned(a) + unsigned(b));
 
 end Behavioral;
