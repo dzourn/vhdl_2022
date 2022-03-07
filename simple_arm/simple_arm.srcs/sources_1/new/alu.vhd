@@ -49,17 +49,40 @@ begin
     process(ALUControl, srcA, srcB)
     begin
         case ALUControl is
-        when "0000" => 
-            tmp_result <= std_logic_vector(signed('0'&srcA) + signed('0'&srcB)); --add
-        
-        when "0001" =>
-            tmp_result <= std_logic_vector(signed('0'&srcA) - signed('0'&srcB)); --sub
+        when "0000" =>  --add
+            tmp_result <= std_logic_vector(signed('0'&srcA) + signed('0'&srcB)); 
+                  
+        when "0001" => --sub
+            tmp_result <= std_logic_vector(signed('0'&srcA) - signed('0'&srcB)); 
     
-        when "0010" =>
-            tmp_result <= srcA and srcB;
+        when "0010" => --and
+            tmp_result <= srcA and srcB; --and
         
-        when "0011" => 
+        when "0011" => --or
             tmp_result <= srcA or srcB;
+            
+        when "0100" => --mov
+            tmp_result <= srcB;
+            
+        when "0101" => --not/mvn 
+            tmp_result <= not srcB;
+        
+        when "011-" => --xor
+            tmp_result <= srcA xor srcB;
+            
+        when "1-00" => --lsl
+            tmp_result <= std_logic_vector(signed('0'&srcB) sll to_integer(unsigned(shamt)));
+            
+        when "1-01" => --lsr
+            tmp_result <= std_logic_vector(signed('0'&srcB) srl to_integer(unsigned(shamt)));
+        
+        when "1-10" => --asr
+            --tmp_result <= std_logic_vector(to_stdlogicvector(to_bitvector('0'&srcB)) sra to_integer(unsigned(shamt)));
+        
+        when "1-11" => --ror
+            tmp_result <= std_logic_vector(signed('0'&srcB) ror to_integer(unsigned(shamt)));
+        
+--        when "1000" => --lsl
             
             
         when others =>
