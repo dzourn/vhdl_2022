@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 02/28/2022 06:18:02 PM
+-- Create Date: 03/05/2022 08:40:12 PM
 -- Design Name: 
--- Module Name: extend - Behavioral
+-- Module Name: Control - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,25 +31,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity extend is
-    Port ( instr : in STD_LOGIC_VECTOR(23 downto 0);
-           immsrc : in STD_LOGIC;
-           extimm : out STD_LOGIC_VECTOR(31 downto 0));
-end extend;
+entity Control is
+    Port ( instr : in STD_LOGIC_VECTOR (31 downto 12);
+           flags : in STD_LOGIC_VECTOR (3 downto 0);
+           
+           RegSrc : out STD_LOGIC_VECTOR (1 downto 0);
+           ALUSrc : out STD_LOGIC;
+           MemtoReg : out STD_LOGIC;
+           ALUControl : out STD_LOGIC_VECTOR (3 downto 0); --create new component where sets bits according to alucontrol from decoder and funct    
+           Immsrc : out STD_LOGIC_VECTOR(1 downto 0);
+           MemWrite : out STD_LOGIC;
+           FlagsWrite : out STD_LOGIC;
+           RegWrite : out STD_LOGIC;
+           PCSrc : out STD_LOGIC);
+end Control;
 
-architecture Behavioral of extend is
+architecture Behavioral of Control is
 
 begin
 
-    process(instr, immsrc)
-    begin
-        case immsrc is
-            when '0' => extimm <= X"00000" & instr(11 downto 0);
-            when '1' => extimm <= instr(23) & instr(23) & instr(23) &
-                                    instr(23) & instr(23) & instr(23) &
-                                     instr(23 downto 0) & "00";
 
-            when others => extimm <= X"00000000";
-        end case;
-    end process;
 end Behavioral;
