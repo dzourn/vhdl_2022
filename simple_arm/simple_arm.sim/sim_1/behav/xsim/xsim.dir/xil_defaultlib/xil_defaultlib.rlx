@@ -1,18 +1,20 @@
 0.7
 2020.2
-Nov 18 2020
-09:20:35
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sim_1/new/InstrDec_tb.vhd,1646493570,vhdl,,,,instrdec_tb,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sim_1/new/alu_tb.vhd,1646154418,vhdl,,,,alu_tb,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sim_1/new/extend_tb.vhd,1646066875,vhdl,,,,extend_tb,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sim_1/new/reg_file_tb.vhd,1646164442,vhdl,,,,reg_file_tb,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/InstrDec.vhd,1646496919,vhdl,,,,instrdec,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/PCLogic.vhd,1646496950,vhdl,,,,pclogic,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/WELogic.vhd,1646495667,vhdl,,,,welogic,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/adder.vhd,1645996489,vhdl,,,,adder,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/alu.vhd,1646329021,vhdl,,,,alu,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/extend.vhd,1646066609,vhdl,,,,extend,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/latch.vhd,1646064041,vhdl,,,,latch,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/latch_we.vhd,1646063784,vhdl,,,,latch_we,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/mux.vhd,1646063392,vhdl,,,,mux,,,,,,,,
-/home/dimitris/di_vhdl/simple_arm/simple_arm.srcs/sources_1/new/reg_file.vhd,1646160902,vhdl,,,,reg_file,,,,,,,,
+Oct 19 2021
+02:56:52
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sim_1/new/InstrDec_tb.vhd,1646503025,vhdl,,,,instrdec_tb,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sim_1/new/alu_tb.vhd,1646763730,vhdl,,,,alu_tb,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sim_1/new/extend_tb.vhd,1646503025,vhdl,,,,extend_tb,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sim_1/new/reg_file_tb.vhd,1646503025,vhdl,,,,reg_file_tb,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/CONDLogic.vhd,1646505331,vhdl,,,,condlogic,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/Control.vhd,1646505712,vhdl,,,,control,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/InstrDec.vhd,1646510444,vhdl,,,,instrdec,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/PCLogic.vhd,1646504339,vhdl,,,,pclogic,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/WELogic.vhd,1646503025,vhdl,,,,welogic,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/adder.vhd,1646670125,vhdl,,,,adder,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/alu.vhd,1646763470,vhdl,,,,alu,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/extend.vhd,1646505981,vhdl,,,,extend,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/latch.vhd,1646503025,vhdl,,,,latch,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/latch_we.vhd,1646503025,vhdl,,,,latch_we,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/mux.vhd,1646503025,vhdl,,,,mux,,,,,,,,
+/home/dimitris/gits/vhdl_2022/simple_arm/simple_arm.srcs/sources_1/new/reg_file.vhd,1646503025,vhdl,,,,reg_file,,,,,,,,

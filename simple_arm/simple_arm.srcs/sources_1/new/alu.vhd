@@ -44,6 +44,7 @@ end alu;
 architecture Behavioral of alu is
     signal tmp_result : std_logic_vector(32 downto 0) := (others => '0');
     signal V,C,N,Z : std_logic := '0';
+--    signal my_tmp: std_logic_vector(shamt downto 0) := (others => '0');
 begin
     
     process(ALUControl, srcA, srcB)
@@ -56,39 +57,41 @@ begin
             tmp_result <= std_logic_vector(signed('0'&srcA) - signed('0'&srcB)); 
     
         when "0010" => --and
-            tmp_result <= srcA and srcB; --and
+            tmp_result <= '0'&srcA and '0'&srcB; --and
         
         when "0011" => --or
-            tmp_result <= srcA or srcB;
+            tmp_result <= '0'&srcA or '0'&srcB;
             
         when "0100" => --mov
-            tmp_result <= srcB;
+            tmp_result <= '0'&srcB;
             
         when "0101" => --not/mvn 
-            tmp_result <= not srcB;
+            tmp_result <= not '0'&srcB;
         
-        when "011-" => --xor
-            tmp_result <= srcA xor srcB;
+        when "0110" => --xor
+            tmp_result <= '0'&srcA xor '0'&srcB;
             
-        when "1-00" => --lsl
+        when "1000" => --lsl
             tmp_result <= std_logic_vector(signed('0'&srcB) sll to_integer(unsigned(shamt)));
             
-        when "1-01" => --lsr
+        when "1001" => --lsr
             tmp_result <= std_logic_vector(signed('0'&srcB) srl to_integer(unsigned(shamt)));
         
-        when "1-10" => --asr
-            --tmp_result <= std_logic_vector(to_stdlogicvector(to_bitvector('0'&srcB)) sra to_integer(unsigned(shamt)));
+        when "1010" => --asr
+            tmp_result <= std_logic_vector(to_stdlogicvector(to_bitvector('0'&srcB) sra to_integer(unsigned(shamt))));
         
-        when "1-11" => --ror
+        when "1011" => --ror
             tmp_result <= std_logic_vector(signed('0'&srcB) ror to_integer(unsigned(shamt)));
         
---        when "1000" => --lsl
+--       \
             
             
         when others =>
             tmp_result <= (others => 'X');
         
         end case;
+        ALUResult <= tmp_result(31 downto 0);
+        
     end process;
 --    tmp(0) <= alu_control(0);
 --    inv_b <= not srcB when alu_control(0) = '1' else srcB;

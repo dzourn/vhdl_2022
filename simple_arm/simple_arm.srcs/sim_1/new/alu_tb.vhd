@@ -40,25 +40,28 @@ architecture Testbench of alu_tb is
     generic(width : positive := 32);
     Port ( srcA : in STD_LOGIC_VECTOR (width-1 downto 0);
            srcB : in STD_LOGIC_VECTOR (width-1 downto 0);
-           alu_control : in STD_LOGIC_VECTOR (1 downto 0);
-           alu_result : out STD_LOGIC_VECTOR (width-1 downto 0);
-           alu_flags : out STD_LOGIC_VECTOR (3 downto 0));
-    end component;
+           ALUControl : in STD_LOGIC_VECTOR (3 downto 0);
+           shamt : in STD_LOGIC_VECTOR(4 downto 0);
+           ALUResult : out STD_LOGIC_VECTOR (width-1 downto 0);
+           Flags : out STD_LOGIC_VECTOR (3 downto 0));
+  end component alu;
     
     signal srcA :STD_LOGIC_VECTOR (31 downto 0);
     signal srcB :STD_LOGIC_VECTOR (31 downto 0);
-    signal alu_control: std_logic_vector(1 downto 0);
-    signal alu_result: std_logic_vector(31 downto 0);
-    signal alu_flags: std_logic_vector(3 downto 0);
+    signal ALUControl: std_logic_vector(1 downto 0);
+    signal ALUResult: std_logic_vector(31 downto 0);
+    signal Flags: std_logic_vector(3 downto 0);
+    signal shamt : std_logic_vector(4 downto 0);
     constant clk_period : time := 10 ns;
     signal clk: std_logic := '0';
 begin
     uut: alu port map(
         srcA => srcA,
         srcB => srcB,
-        alu_control => alu_control,
-        alu_result => alu_result,
-        alu_flags => alu_flags
+        ALUControl => ALUControl,
+        ALUResult =>  ALUResult,
+        Flags => Flags,
+        shamt => shamt
     );
     clk_process: process
     begin
@@ -71,12 +74,13 @@ begin
     stimulus: process
     begin
     
+    shamt <= "00010";
     srcA  <= "00000000000000000000000000010011"; --19 in decimal
     srcB  <= "00000000000000000000000000001100"; --12 in decimal
-    alu_control <= "00";  wait for Clk_period; --Bitwise and A and B
-    alu_control <= "01";  wait for Clk_period; --Bitwise or B from A.
-    alu_control <= "10";  wait for Clk_period; --addition A nad B 
-    alu_control <= "10";  wait for Clk_period;
+    ALUControl <= "0000";  wait for Clk_period; --Bitwise and A and B
+    ALUControl <= "0001";  wait for Clk_period; --Bitwise or B from A.
+    ALUControl <= "0100";  wait for Clk_period; --addition A nad B 
+    ALUControl <= "0101";  wait for Clk_period;
     --wait for 20ns;
     --alu_control <= "00";
 --    wait for 20ns;
