@@ -90,7 +90,15 @@ begin
                 mov_mvn <= not ext_B;                                                                                   
                 x_or <= ext_A xor ext_B;                                                                            
                 lsl_lsr <= std_logic_vector(signed(ext_B) srl to_integer(unsigned(shamt)));                         
-                asr_ror <= std_logic_vector(signed('0'&srcB) ror to_integer(unsigned(shamt)));
+                asr_ror <= std_logic_vector(signed(ext_B) ror to_integer(unsigned(shamt)));
+                
+            when others =>
+                add_sub <= (others => 'X');                                       
+                and_or <= (others => 'X');                                                                          
+                mov_mvn <= (others => 'X');                                                                                   
+                x_or <= (others => 'X');                                                                            
+                lsl_lsr <= (others => 'X');                         
+                asr_ror <= (others => 'X');
          end case;          
     end process;
     
@@ -120,6 +128,7 @@ begin
             Z <= '1';
         end if;
     end process;
+    
     V <= add_sub(32) and (not ALUControl(0));
     C <= add_sub(32) and (not ALUControl(1));
     N <= mux_asaommxr_llar(31);

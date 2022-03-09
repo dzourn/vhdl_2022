@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="33.098 ns"></ZoomEndTime>
+      <Cursor1Time time="14.691 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject type="array" fp_name="/alu_tb/srcA">
+      <obj_property name="ElementShortName">srcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/srcB">
+      <obj_property name="ElementShortName">srcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcB[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/ALUControl">
+      <obj_property name="ElementShortName">ALUControl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/ALUResult">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/Flags">
+      <obj_property name="ElementShortName">Flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Flags[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/shamt">
+      <obj_property name="ElementShortName">shamt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">shamt[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_tb/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/uut/mux_asaommxr_llar">
+      <obj_property name="ElementShortName">mux_asaommxr_llar[32:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_asaommxr_llar[32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

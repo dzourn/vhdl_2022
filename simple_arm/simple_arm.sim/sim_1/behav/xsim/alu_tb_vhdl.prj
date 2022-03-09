@@ -12,6 +12,7 @@ vhdl xil_defaultlib  \
 "../../../../simple_arm.srcs/sources_1/new/PCLogic.vhd" \
 "../../../../simple_arm.srcs/sources_1/new/CONDLogic.vhd" \
 "../../../../simple_arm.srcs/sources_1/new/Control.vhd" \
+"../../../../simple_arm.srcs/sources_1/new/alu_v2.vhd" \
 "../../../../simple_arm.srcs/sim_1/new/reg_file_tb.vhd" \
 "../../../../simple_arm.srcs/sim_1/new/alu_tb.vhd" \
 "../../../../simple_arm.srcs/sim_1/new/extend_tb.vhd" \
