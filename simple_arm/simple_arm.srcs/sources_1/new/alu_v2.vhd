@@ -133,10 +133,10 @@ begin
     C <= add_sub(32) and (not ALUControl(1));
     N <= mux_asaommxr_llar(31);
     
-    Flags(3) <= V;
-    Flags(2) <= C;
-    Flags(1) <= N;
-    Flags(0) <= Z;
+    Flags(0) <= V;
+    Flags(1) <= C;
+    Flags(2) <= N;
+    Flags(3) <= Z;
     ALUResult <= mux_asaommxr_llar(31 downto 0);
     
 end Behavioral;
